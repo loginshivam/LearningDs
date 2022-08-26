@@ -1,0 +1,3 @@
+KAFKA -----
+ 	Quorum 
+    1- KIP 500 
