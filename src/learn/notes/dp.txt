@@ -1,0 +1,6 @@
+DP 
+	If you can't remember something you are condemned to repeat it.
+Step 
+	1- Initialize a data structure e.g. array/list/matrix/map.
+	2- Store the result of sub problem. 
+	3- Before calculating sub problem check from data structure if it already had been calculated

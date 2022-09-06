@@ -1,0 +1,69 @@
+Recursion
+	1- all print - e.g. all subsequence
+		1- pick/not pick call recursion.
+		2- remove after pick and call recursion
+	2- print first solution only
+	    in base condition put
+	    if(condition) return true
+	    else return false
+	    
+	    if (function) return true
+	    if (function) return true
+	3 - count - for counting problem
+	    if(condition) return 1
+	    else return 0
+	    
+	    left = function call
+	    right = function call
+	    
+	    return left + right
+	    for n recursion call
+	    sum =0 
+	    for 1->n
+	    sum += 
+	    return sum
+	    
+	4 - unique combination - unique subsequence
+		1- sort the array
+		2- run recursion for all the unique value  for i=index->n check if a[i]!=a[a-1]
+	    3- remove the picked up
+	
+	5 - generate all the permutation 
+		1- run for all for i -> n.
+		2- have a array to store taken by index.
+		3- if not taken include it.
+		4- check if DS size is equal to length its done
+		
+	6- NQueen problem
+		1- run for all row 
+		2- increase column and again check for all row
+		3- queen attack check (left,left up corner and left below corner)
+		4- if n == column this is location of queen
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Recursion call stack size - 19219

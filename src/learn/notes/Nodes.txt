@@ -1,3 +1,11 @@
+
+DP-
+	Those who can't remember the past are condemned to repeat it 
+
 KAFKA -----
  	Quorum 
-    1- KIP 500 
+    1- KIP 500 https://cwiki.apache.org/confluence/display/KAFKA/KIP-500%3A+Replace+ZooKeeper+with+a+Self-Managed+Metadata+Quorum
+    
+    
+    
+    

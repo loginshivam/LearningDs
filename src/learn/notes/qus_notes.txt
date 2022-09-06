@@ -1,0 +1,15 @@
+
+
+
+
+
+BS - 
+Last occurrence in a sorted array 
+	- as array is started start look from back when fix return index
+	- BS way store value in result and move left
+First and last occurrence of number in sorted array
+	- run binary search twice one for first and other for last 
+Count the occurrence in sorted array
+	- find index by binary then run from left to right and count break if different
+Find Peak Element
+	- run binary search as we want to check the slope 

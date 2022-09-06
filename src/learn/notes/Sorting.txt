@@ -1,0 +1,21 @@
+Selection sort - 
+	1- Find minimum replace with current element.
+	2- go to next element.
+	3- complexity - n2  for i 0 ->n for j i->n
+
+Bubble sort - 
+	1 - check if element is greater than next and replace. after this largest will be at the end 
+	2-  go to next loop check and replace larger one by one
+	   for i 0 -> n for j 0->n-1-i
+	
+	if (left < right) {
+			int mid = left + right;
+			mergeSort(arr, left, mid);
+			mergeSort(arr, mid, right);
+			merge(arr, left, right, mid);
+		}
+		
+		//0  1 2 3 4 5 6  7 8 9 
+	   //10 5 2 7 4 9 12 1 8 6
+	   
+	   1- 

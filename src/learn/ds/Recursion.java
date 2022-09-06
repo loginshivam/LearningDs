@@ -1,5 +1,6 @@
 package learn.ds;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -29,7 +30,8 @@ public class Recursion {
 		System.out.println("Print Fabonacci -> ");
 		System.out.println(febonacci(6));
 		System.out.println("Count Frequency in array -> ");
-		Map<Integer, Integer> map = countFrequencyInArray(new int[] { 10, 20, 20, 30, 40, 50, 40, 10, 10, 30, 30,30,30,50,50,40 });
+		Map<Integer, Integer> map = countFrequencyInArray(
+				new int[] { 10, 20, 20, 30, 40, 50, 40, 10, 10, 30, 30, 30, 30, 50, 50, 40 });
 
 		for (int i : map.keySet()) {
 			System.out.println(i + "   " + map.get(i));
@@ -40,6 +42,18 @@ public class Recursion {
 			System.out.println(i);
 		}
 
+		System.out.print("All the premutation -> ");
+		allthePermutation(0, new int[] { 1, 2, 3, 4 }, new ArrayList<Integer>());
+
+		System.out.println("\nSum of Array");
+		ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();
+		sumOfSubArray(0, new int[] { 2,3,6,7}, new ArrayList<Integer>(), 7, ans);
+		for (ArrayList<Integer> array: ans) {
+			for (int val : array) {
+				System.out.print(val);
+			}
+			System.out.print(" |");
+		}
 	}
 
 	public static void printSomethingNTime(int number) {
@@ -162,5 +176,40 @@ public class Recursion {
 
 		return new int[] { low_index, high_index };
 	}
+
+	public static void allthePermutation(int ind, int arr[], ArrayList<Integer> list) {
+
+		if (ind == arr.length) {
+			for (int val : list) {
+				System.out.print(val + " ");
+			}
+			System.out.print("| ");
+			return;
+		}
+		list.add(arr[ind]);
+		allthePermutation(ind + 1, arr, list);
+		list.remove(list.size() - 1);
+		allthePermutation(ind + 1, arr, list);
+	}
+
+	public static void sumOfSubArray(int ind, int arr[], ArrayList<Integer> list, int k,
+			ArrayList<ArrayList<Integer>> ans) {
+		if (ind == arr.length) {
+			if (k == 0) {
+				ArrayList<Integer> tmp = new ArrayList<Integer>();
+				tmp.addAll(list);
+				ans.add(tmp);
+			}
+			return;
+		}
+		list.add(arr[ind]);
+		if (k >= arr[ind]) {
+			sumOfSubArray(ind, arr, list, k - arr[ind], ans);
+		}
+		list.remove(list.size() - 1);
+		sumOfSubArray(ind + 1, arr, list, k, ans);
+	}
+
 }
+
 //1 1 2 3 5 8

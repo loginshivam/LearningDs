@@ -1,0 +1,50 @@
+------------------------------
+DS, Java, SQL, Kafka 
+------------------------------
+Language -
+	* Java
+	* Scala
+	* Python
+	
+Must - 
+	* DS
+	* System design
+	* Sql
+	* Database design 
+
+Real Time Analytics -
+	* Kafka Stream
+	* Flink 	
+
+Data Engineer - 
+	* Kafka
+	* Cassandra
+	* mongodb
+	* spark
+	
+Theoretical knowledge -
+	* Hadoop/YARN/Map-Reduce
+	* Hive
+	* Hbase
+		
+Nice to have -
+	* Mlops
+	
+libraries - 
+	* pandas
+	* numpy
+	* scikit-learn
+	* caret
+	* mlr 
+	* mllib
+	* Tensor Flow
+	* Spark ML
+	
+	
+Nots - 
+
+SQL
+https://quip.com/2gwZArKuWk7W
+https://www.sqlteaching.com/#!select
+https://mode.com/sql-tutorial/introduction-to-sql/
+https://sqlzoo.net/wiki/SQL_Tutorial
