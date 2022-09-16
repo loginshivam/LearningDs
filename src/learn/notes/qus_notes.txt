@@ -13,3 +13,9 @@ Count the occurrence in sorted array
 	- find index by binary then run from left to right and count break if different
 Find Peak Element
 	- run binary search as we want to check the slope 
+Search in rotated array
+	- if array rotated if we take mid we know either side will be sorted.
+	- check in which side element can be found
+Search in rotated array if duplicate exists
+	- same as rotated array but if left==mid left++
+	 

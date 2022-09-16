@@ -1,0 +1,6 @@
+matplotlib
+scikit learn
+polynomials & graph
+maximum likelihood 
+different type of graph
+basic of statics  - mean, median, mode, standard, deviation, variance, z score, normalization 

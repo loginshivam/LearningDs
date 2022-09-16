@@ -9,8 +9,38 @@ public class BinnarySearch {
 		System.out.println("Find Root of a number -> " + df.format(findRoot(125, 3)));
 		System.out.println(
 				"last accurance on shorted array -> " + lastOccurance(new int[] { 3, 4, 13, 13, 13, 20, 40 }, 13));
-		System.out
-				.println("Count in sorted array -> " + occuranceOfKinSortedArray(new int[] { 1, 1, 2, 2, 2, 2, 2, 3 }, 2));
+		System.out.println(
+				"Count in sorted array -> " + occuranceOfKinSortedArray(new int[] { 1, 1, 2, 2, 2, 2, 2, 3 }, 2));
+		System.out.println("Serach in rotated array sorted -> "
+				+ searchEleRotatedSortedArray(new int[] { 4, 5, 6, 7, 0, 1, 2 }, 3));
+		System.out.println("Seach -> " + searchInRotatedArr(new int[] {4, 5, 6, 7, 0, 1, 2},3));
+
+	}
+
+	public static int searchInRotatedArr(int arr[], int k) {
+
+		int left = 0;
+		int right = arr.length - 1;
+		while (left <= right) {
+			int mid = (left + right) / 2;
+			if (arr[mid] == k) {
+				return mid;
+			} else if (arr[mid] > arr[left]) {
+				if (k >= arr[left] && k <= arr[mid]) {
+					right = mid - 1;
+				} else {
+					left = mid + 1;
+				}
+			} else {
+				if (k > arr[mid] && k >= arr[right]) {
+					left = mid + 1;
+				} else {
+					right = mid - 1;
+				}
+			}
+		}
+
+		return -1;
 	}
 
 	public static double findRoot(int number, int nthRoot) {
@@ -99,4 +129,29 @@ public class BinnarySearch {
 
 		return count;
 	}
+
+	public static int searchEleRotatedSortedArray(int arr[], int k) {
+		int left = 0;
+		int right = arr.length - 1;
+		while (left <= right) {
+			int mid = (left + right) / 2;
+			if (arr[mid] == k) {
+				return mid;
+			} else if (arr[mid] >= arr[left]) {
+				if (k >= arr[left] && k < arr[mid]) {
+					right = mid - 1;
+				} else {
+					left = mid + 1;
+				}
+			} else {
+				if (k > arr[mid] && k <= arr[right]) {
+					left = mid + 1;
+				} else {
+					right = mid - 1;
+				}
+			}
+		}
+		return -1;
+	}
+
 }

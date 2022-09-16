@@ -1,0 +1,12 @@
+Queue - using array
+	- keep track of element count 
+	- push rear%size;
+	- print front -> rear ; print (queue[i%size])  - circular array
+	
+next greatest number  - circular problem-
+	- run loop for 2n-1  - to build stack
+	- while stack top is less then current pop it
+	- if i <size if stack not empty store peek else -1
+	
+	
+https://www.jomaclass.com/sql-data-analytics?utm_source=organic-social&utm_medium=youtube&utm_campaign=python&utm_content=description#two-step
