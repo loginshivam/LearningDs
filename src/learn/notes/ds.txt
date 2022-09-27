@@ -10,3 +10,50 @@ next greatest number  - circular problem-
 	
 	
 https://www.jomaclass.com/sql-data-analytics?utm_source=organic-social&utm_medium=youtube&utm_campaign=python&utm_content=description#two-step
+
+----------
+sort array of 0,1,2 
+	dutch flag problem - take three variable low=0, mid=0 high=length-1 ; mid=0 replace with low increase both;if 1 got to next increase mid; if 2 replace with high and decrease high;
+
+find missing and repeating number -
+	calculate sum = l *(l+1)/2 and squared_sum =  l * (l+1) *(2*l+1) /6 ; calculated values are x^2 - y^2 and x - y ; now solve for x and y
+	best solution is xor 
+
+merge to sorted array in O(1) space - 
+	compare first array with second array one by one replace element as required sort second array and then go to next element
+
+
+maximum sub array sum - 
+	karan's algorithm -  sum =0 ; max = a[0] iterate array and sum += e; if sum>max then max= sum; if sum<0 then sum =0
+
+merge interval 
+	sort them first then iterate and check
+
+set zero in matrix 
+	take two array 1- for column 1- for row then check all element. if ele is zero store it in row/column array index. then iterate and check if any of column or row is zero fill matrix with zero
+
+pascal triangle
+	1- print all values n^2 by adding the value from upper row.
+	2- get the value at given row and column  - (r-1) C (c-1) calculate the factorial.
+	3- modify the 2 approach to generate the row efficiently.  
+	
+next permutation 
+	run loop from end find a[i] < a[i+1]. a[ind2] > a[ind]. swap a[i] with a[ind2]. reverse i+1 -> end
+	
+Stock buy and sell
+	run for loop. If current is less then min update it. check the profit current-min if greater then max update max.
+	
+rotate image - matrix
+	transpose the matrix
+	rotate each row
+	
+	
+	
+	
+Recursion 
+	all permutation
+		init list to hold numbers and array taken to store selected index. run for loop till length of array. if i'th index is false in taken add element to list and
+		update taken to true and do recursion then remove element and update taken to false. if length of list is equal to array return 
+ 
+ Pending
+ 	Find the Duplicate Number

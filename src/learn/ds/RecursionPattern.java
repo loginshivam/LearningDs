@@ -7,7 +7,7 @@ public class RecursionPattern {
 	public static int count = 0;
 
 	public static void main(String[] args) {
-
+		printAllthePermutation(new int[] { 1, 2, 3 }, new boolean[] { false, false, false }, new ArrayList<Integer>());
 		sumOfCombinationEqualsTOK(0, 9, new int[] { 5, 2, 3, 6, 7, 4 }, new ArrayList<Integer>());
 		ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
 		combinationSumToTarget(0, 8, new int[] { 10, 1, 2, 7, 6, 1, 5 }, new ArrayList<Integer>(), list);

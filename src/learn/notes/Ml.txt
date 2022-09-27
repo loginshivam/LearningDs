@@ -4,3 +4,19 @@ polynomials & graph
 maximum likelihood 
 different type of graph
 basic of statics  - mean, median, mode, standard, deviation, variance, z score, normalization 
+tensorflow
+pytorch
+ 
+ 
+ Cassandra architecture 
+ https://www.coursera.org/learn/introduction-to-nosql-databases/supplement/aIdzT/architecture-of-cassandra
+ 
+ pathway language model
+ world grounding
+ imitation and/or reinforcement learning
+ hyperparameter
+ 
+ If you would like to learn more about Deep Q-Learning, we recommend you check out the following papers.
+Mnih, V., Kavukcuoglu, K., Silver, D. et al. Human-level control through deep reinforcement learning. Nature 518, 529–533 (2015).
+Lillicrap, T. P., Hunt, J. J., Pritzel, A., et al. Continuous Control with Deep Reinforcement Learning. ICLR (2016).
+Mnih, V., Kavukcuoglu, K., Silver, D. et al. Playing Atari with Deep Reinforcement Learning. arXiv e-prints. arXiv:1312.5602 (2013).
