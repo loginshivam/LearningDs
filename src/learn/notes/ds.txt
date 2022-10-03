@@ -12,6 +12,21 @@ next greatest number  - circular problem-
 https://www.jomaclass.com/sql-data-analytics?utm_source=organic-social&utm_medium=youtube&utm_campaign=python&utm_content=description#two-step
 
 ----------
+
+check parenthesis 
+	if open put in stack. if stack is empty and element is close parenthesis return false. if string is done still stack have values return false;
+
+remove duplicate from sorted array
+	take loc = 0 and iterate array if element not equal to arr[loc] increase loc++ and update loc with current.
+
+remove element = same as remove duplicate
+	take loc =0 if element != val. arr[loc] = arr[i] loc++
+
+
+add 1 to last digit in array 
+	iterate over array. if ele is less then 9 add 1 and return ; if 9 set array[i] = 0. 
+	If all digit are nine init a new array with lenght+1 set arr[0] = 1 return 
+
 sort array of 0,1,2 
 	dutch flag problem - take three variable low=0, mid=0 high=length-1 ; mid=0 replace with low increase both;if 1 got to next increase mid; if 2 replace with high and decrease high;
 
@@ -45,9 +60,7 @@ Stock buy and sell
 	
 rotate image - matrix
 	transpose the matrix
-	rotate each row
-	
-	
+
 	
 	
 Recursion 
@@ -57,3 +70,20 @@ Recursion
  
  Pending
  	Find the Duplicate Number
+ 	
+ 	91. Decode Ways
+62. Unique Paths
+509. Fibonacci Number
+
+
+
+1) Number of Islands - https://lnkd.in/dHQJGhPJ
+2) k Jumps on Grid - https://lnkd.in/dKM_ETsM)
+3) Finding Prefix in Dictionary - https://lnkd.in/dpRvFDq5
+4) Binary Tree Top-Down View - https://lnkd.in/dmun-Pn3
+5) Diameter of a binary tree [Path is needed] - https://lnkd.in/dH-w_DQV
+6) Contains Duplicates III - https://lnkd.in/djcWHTaX
+7) Minimum Window Substring [Variation of this question] - https://lnkd.in/dPfnQZmr
+
+This is a compilation of public information
+Complete Article https://lnkd.in/eSip3gS3
